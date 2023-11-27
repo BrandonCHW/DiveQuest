@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isDoubleClick())
+        if (IsDoubleClick())
         {
             _moveSpeed = MOVE_SPEED_BASE * 2;
         }
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private bool isDoubleClick()
+    private bool IsDoubleClick()
     {
         if (Input.GetMouseButtonDown(0))
         {
